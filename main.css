@@ -7,26 +7,61 @@
 
 body {
     font-size: 30px; 
-    font-family: 'Bookish', sans-serif;
-    background-color:rgb(235, 235, 235);
+    color: white;
+    font-family: 'Menlo','Bookish', sans-serif;
+    background-color:rgb(20, 20, 20);
+
 }
 header{
+    font-family: 'Bookish';
     text-align: center;
 }
-.header__realryo{
+.upper__header{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 0 3rem;
+    gap: 0 3rem;
+    align-items: center;
+    padding: 1rem;
+    overflow-x: auto;
+
+}
+.header__logo{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.main__thing__shit{
     display: inline-block;
     border: 3px solid green;
     padding: 20px;
-    transition-duration: 1s;
-    position: fixed;
-    left: 50%;
-    top: 50%;
+    transition-duration: .51s;
     transform: translate(-50%,-50%);
-
+    position: fixed;
+    left: 50%; top: 40%;
 }
-.header__realryo:hover{
+.main__thing__shit:hover{
     color: red;
-    font-size: 20px;
+    font-size: 31px;
+}
+.not__main__thing__shit{
+    display: inline-block;
+    border: 3px solid green;
+    padding: 20px;
+    transition-duration: .51s;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    left: 50%; top: 70%;
+    z-index: 11;
+    /*transition: transform $t-long,inset $t-long;*/
+    will-change: inset;
+}
+.not__main__thing__shit:hover{
+    color: red;
+    font-size: 31px;
 }
 ul{
     display: inline-flex;
@@ -37,7 +72,7 @@ img{
     height: 40px;
 }
 
-.nav__menu{
+.menu__nav{
     padding: 20px;
     border: 3px solid red;
     position: relative;
@@ -53,5 +88,13 @@ footer{
     padding: 5px;
     bottom: 0;
     font-size: 12px;
+    margin: 10px 0px;
+}
+.header__realryo{
     margin: 10px;
+}
+
+.start__up{
+    background-color: blue;
+
 }
