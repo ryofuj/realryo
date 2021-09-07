@@ -1,0 +1,69 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+body{
+    font-family: "IBM Plex Sans Medium";
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "content1 content2"
+        "content3 content4"
+    /* grid-gap: 0.2rem; */
+    /* line-height: 1; */
+}
+
+main{
+    background:rgb(255, 255, 255);    
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 40px;
+}
+.card{
+    background: white;
+    font-size: 50px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-style: "IBM Plex Sans Medium";
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+#content1{
+    /* background: rgb(247, 210, 210); */
+    grid-area: content1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content2{
+    /* background: rgb(224, 247, 210); */
+    grid-area: content2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content3{
+    /* background: rgb(213, 210, 247); */
+    grid-area: content3;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#content4{
+    /* background: rgb(247, 210, 244); */
+    grid-area: content4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
