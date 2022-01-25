@@ -1,0 +1,67 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+body{
+    font-family: "IBM Plex Sans Medium";
+}
+.containergrid_tabs{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 17fr;
+    grid-template-rows: 4fr 1fr 16fr;
+    grid-template-areas:
+        "logo content5"
+        "navigation content6tabs"
+        "navigation content6"
+    /* grid-gap: 0.2rem; */
+    /* line-height: 1; */
+}
+#logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fff 50%, #000 50%);
+    background-size: 100% 200%;
+    background-position: bottom left;
+    transition: all .5s ease-out;
+}
+#logo:hover{
+    background-position: top left;
+    /* color: #fff; */
+}
+#logo::after{
+    color: rgb(0, 255, 255);
+    mix-blend-mode: difference;
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+    padding: 1rem 0rem;
+}
+
+#content5{
+    grid-area: content5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navigation{
+    grid-area: navigation;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content6tabs{
+    background-color: rgb(37, 48, 48);
+    grid-area: content6tabs;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 2.2rem;
+}
+#content6{
+    grid-area: content6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
