@@ -6,7 +6,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 3fr 17fr;
-    grid-template-rows: 4fr 1fr 16fr;
+    grid-template-rows: 5fr 1fr 16fr;
     grid-template-areas:
         "logo content5"
         "navigation content6tabs"
@@ -52,7 +52,7 @@ body{
     justify-content: center;
 }
 #content6tabs{
-    background-color: rgb(37, 48, 48);
+    background-color: gray;
     grid-area: content6tabs;
     display: flex;
     align-items: center;
