@@ -101,7 +101,6 @@
 				07D222998F63BDAFD655D443 /* Pods-firstapp (macOS).debug.xcconfig */,
 				D66E7B46B11C465B17176841 /* Pods-firstapp (macOS).release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

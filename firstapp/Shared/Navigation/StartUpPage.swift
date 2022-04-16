@@ -14,7 +14,7 @@ struct StartUpPage: View {
         .interpolatingSpring(stiffness:0.5, damping: 0.5)
                     .repeatForever()
                     .delay(isAnimating ? .random(in: 0...1) : 0)
-                    .speed(isAnimating ? .random(in: 0...1) : 0)
+                    .speed(isAnimating ? .random(in: 0.9...1) : 0)
     }
     
     var body: some View {
